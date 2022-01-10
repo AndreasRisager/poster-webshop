@@ -1,0 +1,28 @@
+.imageSlider {
+  margin: 1em;
+  overflow: hidden;
+  .slick-dots {
+    bottom: 20px;
+    button::before {
+      color: #fff !important;
+    }
+  }
+}
+.slick-slider {
+  position: relative;
+  .slick-arrow {
+    z-index: 1;
+  }
+  .slick-next {
+    right: 10px;
+  }
+  .slick-prev {
+    left: 10px;
+  }
+}
+.slick-list {
+  border-radius: 10px;
+}
+.slick-list div {
+  vertical-align: middle;
+}

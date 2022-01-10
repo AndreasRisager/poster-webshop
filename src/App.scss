@@ -1,0 +1,22 @@
+@import "./variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+body {
+  background-color: #fff;
+  margin: 0 auto;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
