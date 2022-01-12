@@ -19,10 +19,10 @@
   .slick-prev {
     left: 10px;
   }
-}
-.slick-list {
-  border-radius: 10px;
-}
-.slick-list div {
-  vertical-align: middle;
+  .slick-list {
+    border-radius: 10px;
+    div {
+      vertical-align: middle;
+    }
+  }
 }

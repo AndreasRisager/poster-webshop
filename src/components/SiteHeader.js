@@ -24,7 +24,7 @@ export default function SiteHeader() {
             </Link>
             <Link to="/cart" className="siteHeader__cart">
               <i className="fas fa-shopping-bag" aria-hidden="true"></i>
-              <div className="siteHeader__cart-count">{totalItems}</div>
+              <div className="siteHeader__cart-count">{totalItems >= 100 ? "99+" : totalItems}</div>
             </Link>
             <button className="siteHeader__mobileMenu" onClick={() => setOpenMenu(!openMenu)} aria-label="open the menu">
               <i className="fas fa-bars" aria-hidden="true"></i>

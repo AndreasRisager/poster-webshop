@@ -28,23 +28,6 @@ export default function ImageSlider({ slides }) {
           })}
         </Slider>
       </section>
-      {/* <section className="slider">
-        <div className="slider__images" ref={sliderImages} style={{ transform: `translateX(-${SlideWidth * current}px)` }}>
-          {slides.map((slide, index) => {
-            return (
-              <div className={index === current ? "slide active" : "slide"} key={index}>
-                <img src={slide.image} alt="slider" />
-              </div>
-            );
-          })}
-        </div>
-        <button onClick={() => setCurrent(current === 0 ? length - 1 : current - 1)} className="slider__prev">
-          prev
-        </button>
-        <button onClick={() => setCurrent(current === length - 1 ? 0 : current + 1)} className="slider__next">
-          next
-        </button>
-      </section> */}
     </>
   );
 }

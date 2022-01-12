@@ -34,6 +34,7 @@
       padding: 0.4em 0.5em;
       cursor: pointer;
       font-size: 1.33em;
+      color: #000;
     }
   }
   &__cart {
@@ -64,6 +65,10 @@
     &__navigation {
       display: flex;
       border-bottom: 1px solid #dee2e6;
+      padding: 1.5em 1em 1em;
+    }
+    &__logo {
+      padding: 0;
     }
   }
 }
