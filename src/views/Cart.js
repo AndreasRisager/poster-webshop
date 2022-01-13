@@ -38,6 +38,9 @@ export default function Cart() {
                 <p className="cartProduct__description">
                   Design: Måned moderne liggende Color: Henrik Hvid Font: Stramme_Susanne Heart: Ikke_Hjerte Antal kolonner: 1
                 </p>
+                <button className="cartProduct__remove" onClick={() => removeFromCart(item)} aria-label={"Fjern " + item.name}>
+                  Fjern
+                </button>
               </div>
               <p className="cartProduct__price">
                 <span>{item.price.toFixed(2)}</span> kr
