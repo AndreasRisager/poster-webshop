@@ -2,7 +2,7 @@ import "./SiteHeader.scss";
 import PrimaryNavigation from "./PrimaryNavigation";
 import { Link } from "@reach/router";
 import { useState } from "react";
-import { useCart } from "react-use-cart";
+import { useCart } from "../helpers/CartContext";
 
 export default function SiteHeader() {
   const [openMenu, setOpenMenu] = useState(false);
