@@ -1,5 +1,4 @@
 .imageSlider {
-  margin: 1em;
   overflow: hidden;
   .slick-dots {
     bottom: 20px;
@@ -20,7 +19,7 @@
     left: 10px;
   }
   .slick-list {
-    border-radius: 10px;
+    // border-radius: 10px;
     div {
       vertical-align: middle;
     }
