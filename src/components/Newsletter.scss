@@ -1,12 +1,14 @@
 .newsletter {
   background-color: #faf3ee;
-  padding: 3em 0;
+  padding: 3em 1em;
   text-align: center;
   &__title {
     text-transform: uppercase;
     font-size: 1.3em;
     margin-bottom: 0.5em;
     letter-spacing: 2px;
+    line-height: 1.1em;
+    font-weight: 600;
     span {
       font-size: 2em;
     }
@@ -29,6 +31,7 @@
     color: #000;
     font-size: 1em;
     min-height: 46px;
+    min-width: 185px;
   }
   &__button {
     background-color: #98c4be;
@@ -36,9 +39,20 @@
     padding: 10px 18px;
     letter-spacing: 0.08em;
     white-space: normal;
-    font-size: 14px;
+    font-size: 0.875em;
     font-weight: 600;
     text-transform: uppercase;
     border: none;
+    min-height: 46px;
+  }
+  @media only screen and (max-width: 530px) {
+    &__title {
+      span {
+        font-size: 1.3em;
+      }
+    }
+    &__input {
+      min-width: auto;
+    }
   }
 }

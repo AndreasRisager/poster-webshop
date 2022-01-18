@@ -1,6 +1,7 @@
 import React, { useContext, createContext } from "react";
 import useLocalStorage from "./useLocalStorage";
 import storeItems from "../items.json";
+import { navigate } from "@reach/router";
 
 const CartContext = createContext();
 
@@ -50,8 +51,8 @@ export function CartProvider({ children }) {
   }
 
   function checkout() {
-    alert(`Thank you for your purchase:${cart.map((item) => ` ${item.name} (x${item.quantity})`)}`);
-    setCart([]);
+    // TODO
+    navigate("/checkout");
   }
 
   const value = {

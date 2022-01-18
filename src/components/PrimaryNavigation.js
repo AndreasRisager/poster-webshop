@@ -3,7 +3,7 @@ import "./PrimaryNavigation.scss";
 
 export default function PrimaryNavigation({ open }) {
   return (
-    <nav className={open ? "primaryNavigation primaryNavigation-open" : "primaryNavigation"} aria-label="Main menu">
+    <nav className={open ? "primaryNavigation primaryNavigation--open" : "primaryNavigation"} aria-label="Main menu">
       <ul className="primaryNavigation__list">
         <li>
           <Link to="/shop">Shop</Link>

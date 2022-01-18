@@ -13,6 +13,15 @@ export default function ImageSlider({ slides }) {
     autoplay: true,
     autoplaySpeed: 5000,
     pauseOnFocus: true,
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 650,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   };
 
   return (

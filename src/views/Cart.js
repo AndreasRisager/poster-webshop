@@ -1,4 +1,5 @@
 import SiteHeader from "../components/SiteHeader";
+import SiteFooter from "../components/SiteFooter";
 import { useCart } from "../helpers/CartContext";
 import "./Cart.scss";
 
@@ -27,21 +28,25 @@ export default function Cart() {
           </header>
           {cart.map((item) => (
             <article className="cartProduct" key={item.id}>
-              <img src={item.image} alt={item.name} className="cartProduct__image" />
-              <div className="cartProduct__info">
-                <h3 className="cartProduct__title">{item.name}</h3>
-                <p className="cartProduct__description">1. Vælg den ønskede størrelse:: 70 x 100 cm</p>
-                <p className="cartProduct__description">
-                  Design: Måned moderne liggende Color: Henrik Hvid Font: Stramme_Susanne Heart: Ikke_Hjerte Antal kolonner: 1
-                </p>
-                <button className="cartProduct__remove" onClick={() => removeFromCart(item)} aria-label={"Fjern " + item.name}>
-                  Fjern
-                </button>
+              <div className="cartProduct__product">
+                <img src={item.image} alt={item.name} className="cartProduct__image" />
+                <div className="cartProduct__info">
+                  <h3 className="cartProduct__title">{item.name}</h3>
+                  <p className="cartProduct__description">1. Vælg den ønskede størrelse:: 70 x 100 cm</p>
+                  <p className="cartProduct__description">
+                    Design: Måned moderne liggende Color: Henrik Hvid Font: Stramme_Susanne Heart: Ikke_Hjerte Antal kolonner: 1
+                  </p>
+                  <button className="cartProduct__remove" onClick={() => removeFromCart(item)} aria-label={"Fjern " + item.name}>
+                    Fjern
+                  </button>
+                </div>
               </div>
               <p className="cartProduct__price">
+                <p>Pris</p>
                 <span>{item.price.toFixed(2)}</span> kr
               </p>
               <div className="cartProduct__quantity">
+                <p>Antal</p>
                 <label htmlFor="quantity" className="screenreader">
                   Antal
                 </label>
@@ -55,6 +60,7 @@ export default function Cart() {
                 />
               </div>
               <p className="cartProduct__totalPrice">
+                <p>I alt</p>
                 <span>{(item.price * item.quantity).toFixed(2)}</span> kr
               </p>
             </article>
@@ -63,6 +69,7 @@ export default function Cart() {
         <p>Subtotal {totalPrice.toFixed(2)} kr</p>
         <button onClick={checkout}>Checkout</button>
       </main>
+      <SiteFooter />
     </>
   );
 }
